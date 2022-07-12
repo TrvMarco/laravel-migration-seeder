@@ -24,6 +24,7 @@ class CreateTrainsTable extends Migration
             $table->unsignedTinyInteger('numero_carrozze')->default(1); 
             $table->boolean('in_orario');
             $table->boolean('cancellato')->default(false);
+            $table->date('data');
             $table->timestamps();
         });
     }
